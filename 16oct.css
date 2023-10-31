@@ -1,0 +1,9 @@
+p.styling, h1.styling{
+    color: blue;
+    text-align: center;
+    background-color: #2bc262;
+}
+body{
+    
+    background-color: url("ai.jpeg");
+}

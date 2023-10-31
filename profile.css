@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(237, 242, 202);
+}
+.bar{
+    font-family: Arial;
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    background-color: rgba(32, 116, 243, 0.9);
+    border-radius: 22px;
+}
+.home{
+    text-decoration: none;
+    background-color: rgba(32, 116, 243, 0.9);
+    font-size: 23px;
+    color: white;
+    border-color: rgba(32, 116, 243, 0.9);
+    border-width: 0px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 2px;
+}
+.search{
+    text-decoration: none;
+    background-color: rgba(32, 116, 243, 0.9);
+    border-color: rgba(32, 116, 243, 0.9);
+    border-width: 0px;
+    font-size: 25px;
+    float: right;
+    margin-right: 20px;
+}

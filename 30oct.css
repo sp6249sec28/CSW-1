@@ -1,0 +1,20 @@
+table, th, tr, td{
+    border: 5px solid green;
+    border-collapse: collapse;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+}
+li a{
+    float: left;
+    padding: 5px 10px;
+    background-color: green;
+}
+li a:hover{
+    background-color: dodgerblue;
+}
+th{
+    background-color: red;
+}

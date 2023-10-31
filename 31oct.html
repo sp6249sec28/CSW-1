@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        /*span.a{
+            display: inline-block;   
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 2px solid blue;
+            background-color: rgb(255, 132, 50);
+        }
+        span.b{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 2px solid blue;
+            background-color: white;
+        }
+        span.c{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 2px solid blue;
+            background-color: rgb(6, 189, 6);
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        .sq1, .sq2, .sq3{
+            position: static;
+            top: 40px; left: 40px;
+        }
+        .sq4{
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            top: 100px; left: 100px;
+        }
+        .sq5{
+            border: 2px solid;
+            border-radius: 5px;
+            background-color: blue;
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 0px; left: 200px;    
+        }
+        .sq6{
+            border: 2px solid;
+            border-radius: 5px;
+            background-color: red;
+            margin: 0px;
+            padding: 0px;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 0px; left: 0px;
+
+        }*/
+        body{
+            background-color: black;
+        }
+        .box{
+            background-color: brown;
+            border: 2px solid orangered;
+            border-bottom-right-radius: 50px;
+            height: 130px;
+            width: 600px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .series{
+            color: white;
+            font-weight: bold;
+            font-family: Arial;
+            text-transform: uppercase;
+            position: relative;
+            top: 5px; left: 20px;
+            margin-bottom: 20px;
+        }
+        .name{
+            color: orangered;
+            font-size: 70px;
+            font-weight: 100px;
+            font-family: Arial;
+            position: relative;
+            top: 15px; left: 10px;
+        }
+        .author{
+            color: white;
+            font-family: Arial;
+            font-weight: lighter;
+            position: relative;
+            top: 25px; left: 15px;
+        }
+        .quality{
+            background-color: aquamarine;
+            border: 4px solid orangered;
+            border-top-right-radius: 50px;
+            height: 130px;
+            width: 600px;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            bottom: 0px; left: 0px;
+        }
+        .publish{
+            float: right;
+            color: white;
+            text-transform: uppercase;
+            font-family: serif;
+            position: relative;
+            bottom: 10px;
+            right: 15px;
+        }
+        ul{
+            list-style-image: url("") ;
+        }
+    </style>
+</head>
+<body>
+    <!--I am in <span class="a">C-Block</span> <span class="b">Room No 008</span>, <span class="c">ITER</span>
+    CSS POSITION
+    <div class="sq1"></div>
+    <div class="sq2"></div>
+    <div class="sq3"></div>
+    <div class="sq4"></div>
+    <div class="sq5"></div>
+    <div class="sq6"></div>-->
+    <div class="box"></div>
+    <div class="series">wiley emerging technology series</div>
+    <div class="name">
+        Full Stack<br>Java Development<br>
+        <span>with</span> Spring MVC,<br>
+        Hibernate, jQuery,<br>
+        and Bootstrap
+    </div>
+    <div class="author">Mayur Ramgir</div>
+    <div class="quality">
+        <ul>
+            <li><strong>Starter Kit</strong> of full stack application</li>
+            <li><strong>Codes</strong> for all examples in the text</li>
+            <li>Instructive <strong>Videos</strong> to supplement the text</li>
+            <li>Possible <strong>Interview Questions and Answers</strong> inside</li>
+        </ul>
+    </div>
+    <h3 class="publish">wiley</h3>
+</body>
+</html>
