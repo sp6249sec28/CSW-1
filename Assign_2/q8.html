@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 8</title>
+    <style>
+        input[type="text"], select{
+            width: 100%;
+            padding: 10px 16px;
+            margin: 6px 0px;
+            display: inline-block;
+            border: 3px solid blue;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: rgb(249, 181, 55);
+            color: brown;
+            padding: 12px 16px;
+            margin: 6px 0px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(40, 220, 40);
+        }
+        div{
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 3px;
+            background-color: rgb(229, 255, 113);
+            padding: 15px;
+        }
+        input{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/action.page.html">
+            <label for="emp">Employee Name</label>
+            <input type="text" name="employee name" id="emp" placeholder="Your name...">
+            <label for="dept">Department</label>
+            <input type="text" name="dept" id="dept" placeholder="Your department...">
+            <label for="city">City</label>
+            <select id="city" name="city">
+                <option value="Angul">Angul</option>
+                <option value="Baripada">Baripada</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Dhenkanal">Dhenkanal</option>
+                <option value="Koraput">Koraput</option>
+            </select>
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.table{
+    display: table;
+    background-color: aquamarine;
+    border: 1px solid orangered;
+    border-spacing: 5px;
+}
+.row{
+    display: table-row;
+    width: auto;
+}
+.column{
+    display: table-column;
+    float: left;
+    width: 200px;
+}

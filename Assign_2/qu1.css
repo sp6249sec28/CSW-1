@@ -1,0 +1,10 @@
+table, tr,td{
+    border: 3px solid rgb(216, 195, 164);
+    border-radius: 3px;
+}
+tr:nth-child(even){
+    background-color: rgba(241, 212, 167, 0.8);
+}
+tr:nth-child(odd){
+    background-color: rgb(216, 187, 144);
+}
