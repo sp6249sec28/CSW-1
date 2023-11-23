@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown(2000);
+            });
+            $("#stop").click(function(){
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip{
+            padding:10px;
+            color: white;
+            background-color: green;
+            font-size: 50px;
+            text-align: left;
+            border: 1px solid black
+        }
+        #panel{
+            padding: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="stop">Pause the sliding effect</button>  
+    <div id="flip">Hit this area for sliding down he panel</div>
+    <div id="panel">Hello User!</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("#1").fadeIn(1000);
+                    $("#2").fadeIn(2000);
+                    $("#3").fadeIn(3000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Applying fading effect</p>
+        <button>Click here to get the fading effect.</button>
+        <div id="1" style="width:100px;height:60px;display:none; background-color:brown;">
+            Hello World!
+        </div><br>
+        <div id="2" style="width:100px;height:60px;display:none; background-color: yellow;">
+            Hello World!
+        </div><br>
+        <div id="3" style="width:100px;height:60px;display:none; background-color:orange;">
+            Hello World!
+        </div>
+    </body>
+</html>

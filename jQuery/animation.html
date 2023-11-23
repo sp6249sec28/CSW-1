@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    left: '300px',
+                    opacity: '0.8',
+                    height: '100px',
+                    width: '100px'
+                });
+            });
+        })
+    </script>
+    <style>
+        button{
+            padding: 10px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button>Move the box!</button>
+    <p></p>
+    <div style="background-color: dodgerblue; height:50px; width:50px; position:fixed;"></div>    
+</body>
+</html>

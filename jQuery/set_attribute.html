@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <!-- <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("#para1").text("Hi User!");
+                });
+                $("#b2").click(function(){
+                    $("#para2").html("<b>Hi User!</b>");
+                });
+                $("#b3").click(function(){
+                    $("#para3").val("Shane");
+                });
+            });
+        </script> -->
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("#w3s").attr("href", "https://www.reddit.com");
+                    $("a").text("Reddit.com");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- <p id="para1">This is our first paragraph.</p>
+        <p id="para2">This is our second paragraph.</p>
+        <p>Input field: <input type="text" id="para3" value="Rick"></p>
+        <button id="b1">Setting any textual information</button>
+        <button id="b2">Setting any HTML data</button>
+        <button id="b3">Setting any value</button> -->
+        <p id="par1"><a href="https://www.google.com" id="w3s">Google.com</a></p>
+        <button id="b1">Click to change the href value</button>
+        <P>After clicking the link, palce ur cursor on the hyperlink and check the link 
+            address or click it to go to other website.
+        </P>
+    </body>
+</html>

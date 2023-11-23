@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    width:"toggle"
+                });
+            });
+        })
+    </script>
+    <style>
+        button{
+            padding: 10px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+    </style> -->
+    <script>
+        $(Document).ready(function(){
+            $("button").click(function(){
+                var div = $("div");
+                div.animate({height:'50px', opacity:'0.3'})
+                div.animate({height:'100px',width:'100px', opacity:'0.7'}, "slow")
+                div.animate({height:'200px',width:'200px', opacity:'0.3'}, "slow")
+                div.animate({height:'300px',width:'300px', opacity:'0.7'}, "slow")
+                div.animate({fontsize:'2em'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- <button>Move the box!</button>
+    <p></p>
+    <div style="background-color: dodgerblue; height:50px; width:50px; position:absolute;"></div>  -->
+        <button>Start Animation</button>
+        <div style="background: dodgerblue;height:50px;width:50px;position:absolute;">Animation</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script 
+        src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#first").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p1 id="first">The first paragraph is about to disappear by using jQuery</p1>
+        <h2>This example demonstrates element selector</h2>
+        <p2>The 2nd paragraph is not going to disappear</p2>
+        <button id="btn">Click here to Disappear the First Paragraph</button>    
+    </body>
+</html>

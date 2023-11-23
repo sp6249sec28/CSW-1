@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("img").before("<b>Adding text before the image.</b>")
+                });
+                $("#b2").click(function(){
+                    $("img").after("<b>Adding text after the image.</b>")
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <img src="/pictures/sunset.jpeg">
+        <br>
+        <button id="b1">Adding text before the image</button>
+        <button id="b2">Adding text after the image</button>
+    </body>
+</html>

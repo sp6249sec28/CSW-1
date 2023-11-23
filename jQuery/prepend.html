@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("p").prepend(" <b>New Content</b>.");
+            });
+            $("#b2").click(function(){
+                $("ol").prepend("<li>Nuggets</li>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>This is the first para</p>
+    <p>This is the second para</p>
+    <ol>
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Sandwich</li>
+    </ol>
+    <button id="b1">Prepend content at the end of the para</button>
+    <button id="b2">Prepend item at the end of the list</button>
+</body>
+</html>

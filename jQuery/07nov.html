@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice with div</title>
+        <script 
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                let position = 0;
+                let width = 50;
+
+                $("#right").click(function(){
+                    $("div").animate({
+                        marginLeft: "+=250px",
+                        width: "+=50px"
+                    });
+                    alert("Element moved to right.")
+                });
+                $("#left").click(function(){
+                    $("div").animate({
+                        marginLeft: "0px",
+                        width: "50px"
+                    });
+                    alert("Moved to initial position.");
+                });
+            });
+        </script>
+        <style>
+            div{
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                position: relative;
+                transition: all 0.5s;
+            }
+            #left, #right{
+                background-color: rgb(139, 197, 255);
+                color: black;
+                padding: 6px 12px;
+                border-radius: 15px;
+                box-shadow: 3px 3px 4px red;
+                border-color: rgb(139, 197, 255);
+            }
+        </style>
+    </head>
+    <body>
+         <div></div>
+         <br>
+         <button id="left">Left Move</button>
+         <button id="right">Right Move</button>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Group</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".dropdown-menu").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Grouped Buttons Sizes</h2>
+        <h4>By using the .btn-group, we can create display multiple buttons at once:</h4><br/>
+        <p>With btn-group-lg in large size:</p>
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+        </div>
+        <p>With btn-group-md in medium size:</p>
+        <div class="btn-group btn-group-md">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+        </div>
+        <p>With btn-group-md in small size:</p>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-primary">Enter</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+            <button type="button" class="btn btn-primary">Reset</button>
+        </div>
+
+        <h2>Button Listed Vertically</h2>
+        <p>The .btn-group-vertical class is used to generate a vertical button group:</p>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">HTML</button>
+            <button type="button" class="btn btn-primary">CSS</button>
+            <button type="button" class="btn btn-primary">Bootstrap</button>
+        </div>
+        <br>
+        <br>
+        <h2>Dropdown Menus</h2>
+        <p>To create a dropdown menu add one button group inside another:</p>
+        <div class="btn-group">
+            <div type="button" class="btn btn-primary">Cybersecurity</div>
+            <div type="button" class="btn btn-primary">Mobile app development</div>
+            <div class="btn-group">
+                <button type="button" id="btn" class="btn btn-primary dropdown-toggle" 
+                data-toggle="dropdown">
+                    Website Development
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">HTML</a>
+                    <a class="dropdown-item" href="#">CSS</a>
+                    <a class="dropdown-item" href="#">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("p").append(" <b>New Content</b>.");
+            });
+            $("#b2").click(function(){
+                $("ul").append("<li>Soup</li>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>This is the first para</p>
+    <p>This is the second para</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Water</li>
+    </ul>
+    <button id="b1">Append content at the end of the para</button>
+    <button id="b2">Append item at the end of the list</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("h1,p").addClass("green");
+                    $("div").addClass("size");
+                });
+                $("#b2").click(function(){
+                    $("h1, h2, p").removeClass("green");
+                    $("div").removeClass("size");
+                });
+            });
+        </script>
+        <style>
+            .size {
+                font-size: xx-small;
+            }
+            .green {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The is the first heading!</h1>
+        <h2>The is the second heading!</h2>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <div>This is a piece of vital information.</div><br>
+        <button id ="b1">Push classes in elements</button>
+        <br><br>
+        <button id ="b2">Delete the CSS class from the selected elements.</button>
+    </body>
+</html>

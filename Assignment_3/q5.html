@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            //Slide Down
+            $("slideDownBtn").click(function(){
+                $("#content").slideDown("slow");
+            });
+            //Animate
+            $("animateBtn").click(function(){
+                $("#content").animate({
+                    width: "200px",
+                    height: "200px",
+                    opacity: 0.5
+                }, 1000);
+            });
+            //Fade In
+            $("fadeInBtn").click(function(){
+                $("#content").fadeIn();
+            });
+            //Hide
+            $("#hideBtn").click(function(){
+                $("#content").hide();
+            });
+            $("#showBtn").click(function(){
+                $("#content").show();
+            });
+            //MouseEnter
+            $("mouseEnter").mouseenter(function(){
+                $(this).css("background color", "lightblue");
+            });
+            //Double-click
+            $("dblclick").dblclick(function(){
+                alert("Double clicked !!");
+            });
+            //MouseLeave
+            $("mouseleave").mouseleave(function(){
+                alert("Mouse Left !!" )
+            });
+            //Attribute
+            $("attrBtn").click(function(){
+                $("#changeable").attr("title", "New title");
+            });
+            //HTML
+            $("htmlBtn").click(function(){
+                $("#changeable").html("Changed HTML!");
+            });
+        });
+    </script>
+    <style>
+        #content{
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <button id="slideDownBtn">Slide Down</button>
+    <button id="animateBtn">Animate</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <div id="content">Content to be hidden/shown</div>
+    <div id="mouseEnter" style="border: 1px solid #000; padding:10px; margin-top: 20px;">
+        Hover here ! (mouseEnter)
+    </div>
+    <p id="dblclick">Double-click me !</p>
+    <div id="mouseLeave" style="border:1px solid #000; padding:10px; margin-top:20px;">
+        Mouseleave here !
+    </div>
+    <button id="attrBtn">Change Attribute</button>
+    <button id="htmlBtn">Change HTML</button>
+    <p id="changeable" title="Initial Title">This is a changeable element</p>
+</body>
+</html>
